@@ -1,28 +1,24 @@
 const exercisesByGroup = {
   Brust: [
     { name: 'Bankdrücken', tip: 'Ellbogen stabil, Schulterblätter hinten halten.' },
-    { name: 'Schrägbank Kurzhantel', tip: 'Langsam ablassen, explosiv drücken.' },
+    { name: 'Incline Banddrücken', tip: 'Langsam ablassen, explosiv drücken.' },
     { name: 'Kabel-Flys', tip: 'Brustspannung halten, nicht schwingen.' }
   ],
   Rücken: [
-    { name: 'Klimmzüge', tip: 'Volle Streckung, Brust zur Stange.' },
+    { name: 'One Arm Dumbelprent', tip: 'Ruhig und Kontrolliert' },
     { name: 'Rudern Maschine', tip: 'Aus dem Rücken ziehen, nicht nur aus den Armen.' },
     { name: 'Latziehen', tip: 'Stange zur oberen Brust führen.' }
   ],
-  Beine: [
-    { name: 'Kniebeuge', tip: 'Core anspannen, Knie sauber führen.' },
-    { name: 'Beinpresse', tip: 'Kontrollierte Tiefe, Fersen fest.' },
-    { name: 'Rumänisches Kreuzheben', tip: 'Rücken neutral, Hüfte nach hinten.' }
-  ],
-  Schultern: [
-    { name: 'Schulterdrücken', tip: 'Keine Hohlkreuz-Position erzwingen.' },
-    { name: 'Seitheben', tip: 'Leicht gebeugte Arme, kontrolliert heben.' },
-    { name: 'Face Pulls', tip: 'Zur Stirn ziehen und Schulterblatt aktivieren.' }
+ 
+  Trizeps: [
+    { name: 'Bizeps Extension', tip: 'Über den Kopf und dann bis nach unten zum Nacken.' },
+    { name: 'Trizeps  Pushdown', tip: 'Hand nur bis 45 Grad zurücklassen und dann wieder nach unten kontrolliert' },
+    { name: 'Dumbbell Kickback', tip: 'Oberarm soll stabil bleiben und die Übung ´langsam ausführen' }
   ],
   Arme: [
     { name: 'Bizeps-Curls', tip: 'Ellbogen nah am Körper halten.' },
-    { name: 'Trizeps Pushdown', tip: 'Am Ende komplett strecken.' },
-    { name: 'Hammer Curls', tip: 'Neutraler Griff, kein Schwung.' }
+    { name: 'One Arm Bizep-Curls', tip: 'Am Kabelturm , langsam und kontrolliert ellbogen stabil halten' },
+    { name: 'Bizep-Curls mit Langstange', tip: 'Neutraler Griff, kein Schwung.' }
   ]
 };
 
