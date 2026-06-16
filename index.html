@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeCraft Arena 2.0 – Programmieren lernen mit Challenges & Minigames</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__left">
+        <p class="hero__badge">NEU: Lernpfad + Achievements + 3 Minigames</p>
+        <h1>CodeCraft Arena 2.0</h1>
+        <p>
+          Lerne Programmieren mit realistischen Coding-Challenges, direkten Tests,
+          Lern-Feedback und motivierenden Minigames.
+        </p>
+        <div class="hero__cta">
+          <a href="#challenges" class="btn">Challenges starten</a>
+          <a href="#minigames" class="btn btn--ghost">Zu den Minigames</a>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="stat-card"><span>Challenges gelöst</span><strong id="statSolved">0</strong></div>
+        <div class="stat-card"><span>Punkte</span><strong id="statScore">0</strong></div>
+        <div class="stat-card"><span>Streak</span><strong id="statStreak">0</strong></div>
+        <div class="stat-card"><span>Level</span><strong id="statLevel">Rookie</strong></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="card" id="roadmap">
+        <h2>Roadmap: Vom Anfänger zum Builder</h2>
+        <div class="roadmap-grid">
+          <article>
+            <h3>1. Grundlagen</h3>
+            <p>Variablen, Datentypen, Bedingungen, Schleifen.</p>
+          </article>
+          <article>
+            <h3>2. Problem lösen</h3>
+            <p>Arrays, Strings, Funktionen und kleine Algorithmen.</p>
+          </article>
+          <article>
+            <h3>3. Debugging</h3>
+            <p>Fehler finden, Tests lesen und strukturiert korrigieren.</p>
+          </article>
+          <article>
+            <h3>4. Projekte</h3>
+            <p>Code in Features umsetzen und sauber refaktorieren.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" id="challenges">
+        <h2>Coding Challenges</h2>
+        <p>Schreibe eine Funktion <code>solve(...)</code>. Deine Lösung wird automatisch getestet.</p>
+
+        <div class="challenge-head">
+          <label for="challengeSelect">Aufgabe:</label>
+          <select id="challengeSelect"></select>
+          <button id="nextChallengeBtn" class="btn btn--small">Nächste Aufgabe</button>
+        </div>
+
+        <article class="challenge-info">
+          <h3 id="challengeTitle"></h3>
+          <p id="challengeDescription"></p>
+          <p id="challengeDifficulty" class="difficulty"></p>
+          <div>
+            <h4>Testfälle</h4>
+            <ul id="challengeTests"></ul>
+          </div>
+        </article>
+
+        <label for="codeInput">Dein Code</label>
+        <textarea id="codeInput" rows="12" spellcheck="false"></textarea>
+
+        <div class="actions">
+          <button id="runCodeBtn" class="btn">Code testen</button>
+          <button id="showSolutionBtn" class="btn btn--ghost">Lösungshinweis</button>
+          <button id="resetCodeBtn" class="btn btn--ghost">Reset</button>
+        </div>
+
+        <pre id="feedback" aria-live="polite"></pre>
+      </section>
+
+      <section class="card" id="quiz">
+        <h2>Quick Quiz</h2>
+        <p id="quizQuestion"></p>
+        <div id="quizAnswers" class="answer-grid"></div>
+        <p id="quizResult"></p>
+      </section>
+
+      <section class="card" id="minigames">
+        <h2>Minigames</h2>
+        <div class="mini-grid">
+          <article class="game">
+            <h3>⚡ Speed Typer</h3>
+            <p>Tippe die Code-Zeile exakt nach.</p>
+            <code id="typingPrompt"></code>
+            <input id="typingInput" type="text" placeholder="Code hier tippen" />
+            <p id="typingFeedback"></p>
+          </article>
+
+          <article class="game">
+            <h3>🐞 Bug Hunter</h3>
+            <p>Wähle die korrekte Fehleranalyse.</p>
+            <code id="bugCode"></code>
+            <div id="bugOptions" class="answer-grid"></div>
+            <p id="bugFeedback"></p>
+          </article>
+
+          <article class="game">
+            <h3>🧠 Complexity Rush</h3>
+            <p>Welche Komplexität passt am besten?</p>
+            <p id="complexityQuestion"></p>
+            <div id="complexityOptions" class="answer-grid"></div>
+            <p id="complexityFeedback"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" id="achievements">
+        <h2>Achievements</h2>
+        <ul id="achievementList" class="achievement-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>CodeCraft Arena 2.0 – Better practice. Faster learning. More fun.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
